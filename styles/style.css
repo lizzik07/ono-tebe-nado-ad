@@ -1,3 +1,14 @@
+/* Сброс стандартных отступов для Pixel Perfect */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -185,8 +196,6 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .lots__card-list-item {
@@ -317,8 +326,6 @@ main {
 .footer__menu-list {
   text-align: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .footer__menu-link {
@@ -335,6 +342,4 @@ main {
   display: flex;
   gap: 48px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
