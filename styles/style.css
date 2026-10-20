@@ -9,11 +9,9 @@ main {
   margin: 0 auto;
 }
 
-/* ==================== ШАПКА ==================== */
 .header {
   display: grid;
-  /* 1fr min-content 1fr обеспечивает идеальное центрирование логотипа */
-  grid-template-columns: 1fr min-content 1fr; 
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 51px 89px;
 }
@@ -21,7 +19,7 @@ main {
 .header__links-list {
   display: flex;
   gap: 32px;
-  list-style: none; /* Убираем стандартные маркеры, зададим свои */
+  list-style: none;
 }
 
 .header__links-list-item {
@@ -35,12 +33,12 @@ main {
 .header__link {
   font-size: 18px;
   white-space: nowrap;
-  text-decoration: none; /* Убираем подчеркивание по умолчанию */
+  text-decoration: none;
 }
 
 .text-link:hover {
   background-color: #000000;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .header__link_active {
@@ -79,7 +77,6 @@ main {
   line-height: 1.35;
 }
 
-/* ==================== ОБЛОЖКА ==================== */
 .cover {
   position: relative;
   padding: 165px 50px 50px 50px;
@@ -95,7 +92,7 @@ main {
   z-index: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6; /* Округлил значение */
+  opacity: 0.6;
   background-color: #000000;
 }
 
@@ -105,7 +102,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #FFF;
+  color: #ffffff;
   font-weight: bold;
   font-size: 100px;
   line-height: 1.15;
@@ -146,7 +143,7 @@ main {
 }
 
 .cover__description-text {
-  color: #FFF;
+  color: #ffffff;
   font-size: 22px;
   line-height: 1.27;
   text-transform: uppercase;
@@ -154,9 +151,9 @@ main {
 }
 
 .bet-button {
-  border: 1px #FFF solid;
+  border: 1px #ffffff solid;
   padding: 14px 32px;
-  color: #FFF;
+  color: #ffffff;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 22px;
@@ -168,10 +165,9 @@ main {
 
 .bet-button:hover {
   color: #000000;
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
-/* ==================== СЕКЦИЯ ЛОТОВ ==================== */
 .lots {
   padding: 0 50px;
 }
@@ -193,7 +189,6 @@ main {
   padding: 0;
 }
 
-/* Исправлено lost__ на lots__ */
 .lots__card-list-item {
   height: 100%;
 }
@@ -212,7 +207,6 @@ main {
   width: auto;
   height: 100%;
   padding: 50px 40px;
-
 }
 
 .card_type_film {
@@ -236,7 +230,7 @@ main {
 .card__title {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #ffffff;
   font-weight: bold;
   font-size: 22px;
   line-height: 1.2;
@@ -247,7 +241,7 @@ main {
 .card__text {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #ffffff;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -261,7 +255,6 @@ main {
   width: fit-content;
 }
 
-/* ==================== СЕКЦИЯ ОБ АУКЦИОНЕ ==================== */
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -310,7 +303,6 @@ main {
   line-height: normal;
 }
 
-/* ==================== ПОДВАЛ ==================== */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -325,6 +317,8 @@ main {
 .footer__menu-list {
   text-align: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__menu-link {
@@ -341,4 +335,6 @@ main {
   display: flex;
   gap: 48px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
