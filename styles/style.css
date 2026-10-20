@@ -1,14 +1,3 @@
-/* Сброс стандартных отступов для Pixel Perfect */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -22,7 +11,7 @@ main {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1.51fr 2fr 1.5fr;
   align-items: center;
   padding: 92px 51px 89px;
 }
@@ -30,7 +19,6 @@ main {
 .header__links-list {
   display: flex;
   gap: 32px;
-  list-style: none;
 }
 
 .header__links-list-item {
@@ -44,12 +32,11 @@ main {
 .header__link {
   font-size: 18px;
   white-space: nowrap;
-  text-decoration: none;
 }
 
 .text-link:hover {
   background-color: #000000;
-  color: #ffffff;
+  color: #FFF;
 }
 
 .header__link_active {
@@ -103,7 +90,7 @@ main {
   z-index: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.6000000238418579;
   background-color: #000000;
 }
 
@@ -113,7 +100,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #ffffff;
+  color: #FFF;
   font-weight: bold;
   font-size: 100px;
   line-height: 1.15;
@@ -139,6 +126,8 @@ main {
   letter-spacing: 60px;
 }
 
+/* Убирает ненужный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
+
 .remove-spacing {
   letter-spacing: normal;
 }
@@ -154,7 +143,7 @@ main {
 }
 
 .cover__description-text {
-  color: #ffffff;
+  color: #FFF;
   font-size: 22px;
   line-height: 1.27;
   text-transform: uppercase;
@@ -162,9 +151,9 @@ main {
 }
 
 .bet-button {
-  border: 1px #ffffff solid;
+  border: 1px #FFF solid;
   padding: 14px 32px;
-  color: #ffffff;
+  color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 22px;
@@ -176,7 +165,7 @@ main {
 
 .bet-button:hover {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #FFF;
 }
 
 .lots {
@@ -198,7 +187,7 @@ main {
   list-style: none;
 }
 
-.lots__card-list-item {
+.lost__card-list-item {
   height: 100%;
 }
 
@@ -239,7 +228,7 @@ main {
 .card__title {
   position: relative;
   z-index: 1;
-  color: #ffffff;
+  color: #FFF;
   font-weight: bold;
   font-size: 22px;
   line-height: 1.2;
@@ -250,7 +239,7 @@ main {
 .card__text {
   position: relative;
   z-index: 1;
-  color: #ffffff;
+  color: #FFF;
   font-size: 20px;
   line-height: 1.2;
 }
